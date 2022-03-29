@@ -215,7 +215,7 @@ public class Databases {
     connectionPool.setUsername(username);
     connectionPool.setPassword(password);
     connectionPool.setInitialSize(0);
-    connectionPool.setMaxTotal(5);
+    connectionPool.setMaxTotal(10);
     connectionPool.setUrl(jdbcConnectionString);
     connectionProperties.forEach(connectionPool::addConnectionProperty);
     return connectionPool;
